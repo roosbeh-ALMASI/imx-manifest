@@ -37,5 +37,5 @@
   <project name="meta-virtualization" path="sources/meta-virtualization" remote="yp" revision="b9a29d2423407c1e50f19dc3f3e154d164c5f0ec" upstream="whinlatter"/>
   <project name="meta-yocto" path="sources/meta-yocto" remote="yp" revision="d02d3faaf4d6075ea03e9eb47654ec7639f929a0" upstream="whinlatter"/>
   <project name="openembedded-core" path="sources/openembedded-core" remote="oe" revision="9964fa3da2fa1e7243fba1a826e59f7bb1813706" upstream="whinlatter"/>
-  <project name="meta-imx93-frdm" path="sources/meta-imx93-frdm" remote="roosbeh" revision="b26885d68e9eda462a5e008ca58147ef20a1a787"/>
+  <project name="meta-imx93-frdm" path="sources/meta-imx93-frdm" remote="roosbeh" revision="8975d91b965a7dbb70400cb344ec088754fabfb4"/>
 </manifest>
