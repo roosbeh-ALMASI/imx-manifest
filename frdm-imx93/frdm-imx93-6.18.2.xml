@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remote name="community" fetch="https://github.com/Freescale"/>
+  <remote name="imx" fetch="https://github.com/nxp-imx"/>
+  <remote name="imx-support" fetch="https://github.com/nxp-imx-support"/>
+  <remote name="kraj" fetch="https://github.com/kraj"/>
+  <remote name="oe" fetch="https://github.com/openembedded"/>
+  <remote name="ossystems" fetch="https://github.com/OSSystems"/>
+  <remote name="qt" fetch="https://github.com/YoeDistro"/>
+  <remote name="timesys" fetch="https://github.com/TimesysGit"/>
+  <remote name="yp" fetch="https://git.yoctoproject.org"/>
+  
+  <remote name="roosbeh" fetch="https://github.com/roosbeh-ALMASI"/>
+  <default revision="whinlatter" sync-j="4"/>
+  
+  <project name="bitbake" path="sources/bitbake" remote="oe" revision="f5f6b40f5f79f46c8c49bb54218e423d15526cfb" upstream="master" dest-branch="6e511d035a3d1e4129dab7b0dfbf216bd8e99b47"/>
+  <project name="fsl-community-bsp-base" path="sources/base" remote="community" revision="e2b65583ca857eed5d7aa675a77712fa58096bb0" upstream="master">
+    <linkfile src="setup-environment" dest="setup-environment"/>
+  </project>
+  <project name="meta-arm" path="sources/meta-arm" remote="yp" revision="3752c4e4478a6dbdf7a722a261d16ebc7a4a99e5" upstream="whinlatter"/>
+  <project name="meta-browser" path="sources/meta-browser" remote="ossystems" revision="26ce9f7e67880ffb819c4012e89a8863c5f853ba"/>
+  <project name="meta-clang" path="sources/meta-clang" remote="kraj" revision="cf20f8bd1366d41094c945597b95dd746e87b871" upstream="master"/>
+  <project name="meta-freescale" path="sources/meta-freescale" remote="community" revision="2781242e499e601ef9454009aceed16186a48d9e" upstream="whinlatter"/>
+  <project name="meta-freescale-3rdparty" path="sources/meta-freescale-3rdparty" remote="community" revision="b2b1987841018013006f909f817a3e9b034c6227" upstream="whinlatter"/>
+  <project name="meta-freescale-distro" path="sources/meta-freescale-distro" remote="community" revision="8001652aa3e2c6436c2bfce744e99f398c680858" upstream="whinlatter"/>
+  <project name="meta-freescale-ml" path="sources/meta-freescale-ml" remote="community" revision="b364d313706d247fadf12feb68136559d7ff3d52" upstream="master"/>
+  <project name="meta-imx" path="sources/meta-imx" remote="imx" revision="fb0e606e90fbaecc273b832a9965bfef9f8b0b91" upstream="whinlatter-6.18.2-1.0.0" dest-branch="refs/tags/rel_imx_6.18.2_1.0.0">
+    <linkfile src="tools/imx-setup-release.sh" dest="imx-setup-release.sh"/>
+    <linkfile src="README.md" dest="README.md"/>
+  </project>
+  <project name="meta-nxp-connectivity" path="sources/meta-nxp-connectivity" remote="imx" revision="80e4f62242f9606af95851e0741fa7ccc7e55b01" upstream="imx_matter_2025_q4-post" dest-branch="refs/tags/rel_imx_6.18.2_1.0.0"/>
+  <project name="meta-nxp-demo-experience" path="sources/meta-nxp-demo-experience" remote="imx-support" revision="45e27d01df4272f29380a4e385962d3fc723428b" upstream="whinlatter-6.18.2-1.0.0" dest-branch="refs/tags/rel_imx_6.18.2_1.0.0"/>
+  <project name="meta-openembedded" path="sources/meta-openembedded" remote="oe" revision="a4e768dcfae181dd99e39c4286fa0729ca7f4e47" upstream="whinlatter"/>
+  <project name="meta-qt6" path="sources/meta-qt6" remote="qt" revision="be7fddeb123706f9ef428e1248e9bfa3c0ba3953" upstream="6.9.3"/>
+  <project name="meta-security" path="sources/meta-security" remote="yp" revision="3b93a09d528fd93995a15c4994de92759b057b15" upstream="whinlatter"/>
+  <project name="meta-timesys" path="sources/meta-timesys" remote="timesys" revision="e0ce07084184e33d68058858276a0b9400c0d0c1" upstream="master"/>
+  <project name="meta-virtualization" path="sources/meta-virtualization" remote="yp" revision="b9a29d2423407c1e50f19dc3f3e154d164c5f0ec" upstream="whinlatter"/>
+  <project name="meta-yocto" path="sources/meta-yocto" remote="yp" revision="d02d3faaf4d6075ea03e9eb47654ec7639f929a0" upstream="whinlatter"/>
+  <project name="openembedded-core" path="sources/openembedded-core" remote="oe" revision="9964fa3da2fa1e7243fba1a826e59f7bb1813706" upstream="whinlatter"/>
+  <project name="meta-imx93-frdm" path="sources/meta-imx93-frdm" remote="roosbeh" revision="b26885d68e9eda462a5e008ca58147ef20a1a787"/>
+</manifest>
