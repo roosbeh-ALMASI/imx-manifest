@@ -13,7 +13,7 @@
   <remote name="roosbeh" fetch="https://github.com/roosbeh-ALMASI"/>
   <default revision="whinlatter" sync-j="4"/>
   
-  <project name="bitbake" path="sources/bitbake" remote="oe" revision="f5f6b40f5f79f46c8c49bb54218e423d15526cfb" upstream="master" dest-branch="6e511d035a3d1e4129dab7b0dfbf216bd8e99b47"/>
+  <project name="bitbake" path="sources/bitbake" remote="roosbeh" revision="f5f6b40f5f79f46c8c49bb54218e423d15526cfb" upstream="frdm-imx93-lf-6.18.2" dest-branch="frdm-imx93-lf-6.18.2"/>
   <project name="fsl-community-bsp-base" path="sources/base" remote="community" revision="e2b65583ca857eed5d7aa675a77712fa58096bb0" upstream="master">
     <linkfile src="setup-environment" dest="setup-environment"/>
   </project>
