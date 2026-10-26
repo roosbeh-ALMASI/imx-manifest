@@ -56,22 +56,22 @@ source imx-setup-release.sh -b build-frdm
 
 Accept the NXP EULA when prompted.
 
+NXP initialization changes the working directory into `build-frdm`
+and registers the required BSP layers. Run this initialization
+only when creating the build configuration; rerunning it may
+restore saved configuration files and discard later customizations.
+
 Configure the custom layer:
 
 ```bash
-bash sources/meta-imx93-frdm/tools/setup-frdm.sh \
-  "$PWD/build-frdm"
+bash ../sources/meta-imx93-frdm/tools/setup-frdm.sh "$PWD"
 ```
 
 The setup helper registers the custom layer and applies the required package and machine configuration.
 
-For hosts with approximately 30 GiB RAM, the following settings were used to avoid memory exhaustion during compilation. Add them to `build-frdm/conf/local.conf`:
-
-```bitbake
-BB_NUMBER_THREADS = "4"
-PARALLEL_MAKE = "-j 4"
-PARALLEL_MAKEINST = "-j 4"
-```
+The FRDM setup helper automatically configures conservative build
+parallelism defaults (four BitBake threads and four parallel make
+jobs), unless the user has already configured these settings.
 
 Enter the build environment if it is not already active:
 
